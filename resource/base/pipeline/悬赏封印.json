@@ -66,46 +66,68 @@
       129,
       157
     ],
-    "next": [
-      "探索_悬赏_识别蓝色返回"
-    ],
-    "interrupt": [
-      "点击探索"
-    ],
+    "next": "庭院_点击式神录",
+    "interrupt": "打开底部菜单",
     "on_error": "返回庭院"
   },
-  "探索_悬赏_识别蓝色返回": {
+  "庭院_点击式神录": {
     "recognition": "FeatureMatch",
-    "roi": [
-      0,
-      4,
-      138,
-      100
+    "action": "Click",
+    "template": [
+      "庭院_式神录.png",
+      "庭院_式神录_2.png"
     ],
-    "template": "返回_蓝色.png",
+    "post_delay": 1000,
+    "roi": [
+      30,
+      551,
+      1249,
+      150
+    ],
+    "next": "装备日常清杂预设"
+  },
+  "探索_悬赏_识别探索特征": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "探索_六道之门.png",
+      "探索_地域鬼王.png",
+      "探索_式神委派.png",
+      "探索_御魂.png"
+    ],
+    "roi": [
+      9,
+      575,
+      1137,
+      144
+    ],
+    "post_delay": 1000,
+    "next": [
+      "探索_悬赏_开始识别探索妖怪"
+    ]
+  },
+  "探索_悬赏_开始识别探索妖怪": {
+    "action": "Custom",
+    "custom_action": "BountyMonsterRecognition",
+    "next": "返回庭院"
+  },
+  "识别探索目标_向上滑动": {
     "action": "Custom",
     "custom_action": "RandomSwipe",
     "custom_action_param": {
       "start_roi": [
-        16,
-        468,
-        100,
-        38
+        18,
+        446,
+        102,
+        68
       ],
       "end_roi": [
-        23,
-        262,
-        80,
-        27
+        27,
+        195,
+        90,
+        74
       ],
       "delay": 1000
-    },
-    "post_delay": 3000,
-    "next": [
-      "悬赏封印_识别宝箱",
-      "悬赏封印_识别妖怪"
-    ],
-    "on_error": "返回庭院"
+    }
   },
   "悬赏封印_识别宝箱": {
     "recognition": "FeatureMatch",
@@ -114,6 +136,7 @@
       "悬赏_宝箱.png",
       "悬赏_宝箱2.png"
     ],
+    "timeout": 1000,
     "next": "悬赏封印_领取宝箱奖励",
     "roi": [
       2,
@@ -131,19 +154,11 @@
       143,
       491
     ],
-    "post_delay": 1000,
-    "next": "悬赏封印_识别妖怪",
-    "interrupt": "悬赏_向上滑动一下"
+    "post_delay": 1000
   },
   "悬赏封印_识别妖怪": {
     "recognition": "OCR",
     "expected": "悬赏封印",
-    "action": "Click",
-    "next": [
-      "识别未发现妖怪",
-      "识别探索目标"
-    ],
-    "interrupt": "悬赏_向上滑动一下",
     "roi": [
       2,
       115,
@@ -155,14 +170,12 @@
   "识别未发现妖怪": {
     "recognition": "OCR",
     "expected": "线索",
-    "action": "Click",
     "roi": [
       520,
       292,
       124,
       40
-    ],
-    "next": "悬赏封印_关闭线索界面"
+    ]
   },
   "悬赏封印_关闭线索界面": {
     "action": "Click",
@@ -172,8 +185,13 @@
       979,
       56
     ],
-    "next": "返回庭院",
     "post_delay": 1000
+  },
+  "悬赏_开始识别探索": {
+    "next": "识别探索目标",
+    "interrupt": [
+      "悬赏_向上滑动一下"
+    ]
   },
   "悬赏_向上滑动一下": {
     "roi": [
@@ -231,21 +249,10 @@
       60
     ],
     "expected": "探索",
-    "next": "探索_点击式神录"
-  },
-  "探索_点击式神录": {
-    "recognition": "FeatureMatch",
-    "action": "Click",
-    "roi": [
-      781,
-      628,
-      66,
-      76
-    ],
-    "template": "探索_式神录.png",
-    "next": "装备日常清杂预设",
-    "on_error": "探索_悬赏_自动挑战",
-    "post_delay": 1000
+    "next": [
+      "探索_悬赏_自动轮换",
+      "探索_悬赏_自动挑战"
+    ]
   },
   "装备日常清杂预设": {
     "action": "Custom",
@@ -267,8 +274,10 @@
     ],
     "post_delay": 2000,
     "next": [
-      "探索_悬赏_自动轮换",
-      "探索_悬赏_自动挑战"
+      "探索_悬赏_识别探索特征"
+    ],
+    "interrupt": [
+      "点击探索"
     ]
   },
   "探索_悬赏_自动挑战": {
@@ -353,6 +362,6 @@
       97
     ],
     "post_delay": 500,
-    "next": "探索_悬赏_识别蓝色返回"
+    "next": "探索_悬赏_识别探索特征"
   }
 }

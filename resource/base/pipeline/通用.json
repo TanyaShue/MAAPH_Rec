@@ -7,7 +7,7 @@
   "庭院_点击探索": {
     "recognition": "TemplateMatch",
     "action": "Click",
-    "template": ["庭院_探索_望月幽庭.png","庭院_探索_织梦莲庭.png","庭院_探索_枫色秋庭.png"],
+    "template": ["庭院_探索_望月幽庭.png","庭院_探索_织梦莲庭.png","庭院_探索_枫色秋庭.png","庭院_探索_初语谧景.png"],
     "roi": [
      23,98,1144,249
     ],
@@ -19,11 +19,19 @@
   },
   "识别庭院特征": {
     "recognition": "TemplateMatch",
-    "template": ["庭院_探索_望月幽庭.png","庭院_探索_织梦莲庭.png","庭院_探索_枫色秋庭.png"],
+    "template": ["庭院_探索_望月幽庭.png","庭院_探索_织梦莲庭.png","庭院_探索_枫色秋庭.png","庭院_探索_初语谧景.png"],
     "roi": [
       23,98,1144,249
     ],
     "post_delay": 2000
+  },
+  "识别探索特征": {
+    "recognition": "TemplateMatch",
+    "template": ["探索_六道之门.png","探索_地域鬼王.png","探索_式神委派.png","探索_御魂.png"],
+    "roi": [
+      9,575,1137,144
+    ],
+    "post_delay": 1000
   },
   "识别蓝色返回": {
     "recognition": "FeatureMatch",

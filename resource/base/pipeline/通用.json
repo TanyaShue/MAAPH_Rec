@@ -92,5 +92,25 @@
       216,
       191
     ]
+  },
+    "左滑一下屏幕": {
+    "is_sub": true,
+    "action": "Custom",
+    "custom_action": "RandomSwipe",
+    "custom_action_param": {
+      "start_roi": [
+        322,
+        269,
+        107,
+        239
+      ],
+      "end_roi": [
+        1004,
+        296,
+        96,
+        218
+      ],
+      "delay": 2000
+    }
   }
 }

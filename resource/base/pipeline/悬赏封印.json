@@ -24,26 +24,7 @@
       "悬赏封印_点击叉叉"
     ]
   },
-  "左滑一下屏幕": {
-    "is_sub": true,
-    "action": "Custom",
-    "custom_action": "RandomSwipe",
-    "custom_action_param": {
-      "start_roi": [
-        322,
-        269,
-        107,
-        239
-      ],
-      "end_roi": [
-        1004,
-        296,
-        96,
-        218
-      ],
-      "delay": 2000
-    }
-  },
+
   "悬赏封印_点击一键追踪": {
     "recognition": "OCR",
     "expected": "键",

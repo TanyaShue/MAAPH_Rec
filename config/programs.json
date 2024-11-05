@@ -38,7 +38,8 @@
                     "task_name": "自动逢魔",
                     "task_entry": "自动逢魔",
                     "option": [
-                        "打极逢魔"
+                        "逢魔首领分组预设",
+                        "逢魔首领队伍预设"
                     ]
                 },
                 {
@@ -157,12 +158,28 @@
                         }
                     }
                 },
-                "打极逢魔": {
-                    "boole": {
-                        "default": false,
+                "逢魔首领分组预设": {
+                    "input": {
+                        "name": "逢魔预设分组",
+                        "default": "默认分组",
                         "pipeline_override": {
-                            "自动逢魔": {
-                                "enabled": "{boole}"
+                            "现世逢魔_装备式神预设": {
+                                "custom_action_param": {
+                                    "group_name": "{value}"
+                                }
+                            }
+                        }
+                    }
+                },
+                "逢魔首领队伍预设": {
+                    "input": {
+                        "name": "逢魔预设队伍",
+                        "default": "默认队伍",
+                        "pipeline_override": {
+                            "现世逢魔_装备式神预设": {
+                                "custom_action_param": {
+                                    "team_name": "{value}"
+                                }
                             }
                         }
                     }

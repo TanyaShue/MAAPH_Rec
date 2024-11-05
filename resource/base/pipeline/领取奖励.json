@@ -9,7 +9,8 @@
         "领取奖励_商店每日奖励",
         "领取奖励_花合战奖励"
       ]
-    }
+    },
+    "on_error": "返回庭院"
   },
   "领取奖励_邮件": {
     "recognition": "TemplateMatch",
@@ -122,7 +123,12 @@
   "领取奖励_签到_点击签到": {
     "action": "Click",
     "post_delay": 1000,
-    "target": [562,153,143,219],
+    "target": [
+      562,
+      153,
+      143,
+      219
+    ],
     "next": "领取奖励_签到_点击屏幕继续"
   },
   "领取奖励_签到_点击屏幕继续": {
@@ -130,16 +136,33 @@
     "expected": "点击屏幕继续",
     "action": "Click",
     "post_delay": 1000,
-    "roi": [504,666,313,53],
-    "target": [504,666,313,53],
+    "roi": [
+      504,
+      666,
+      313,
+      53
+    ],
+    "target": [
+      504,
+      666,
+      313,
+      53
+    ],
     "next": "关闭签到界面"
   },
   "关闭签到界面": {
     "recognition": "OCR",
-    "expected": ["关闭.png"],
+    "expected": [
+      "关闭.png"
+    ],
     "action": "Click",
     "post_delay": 1000,
-    "roi": [831,69,87,79]
+    "roi": [
+      831,
+      69,
+      87,
+      79
+    ]
   },
   "领取奖励_每日勾玉": {
     "recognition": "FeatureMatch",
@@ -157,7 +180,10 @@
   "领取奖励_领取签到小垃圾": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": ["签到小垃圾.png","签到小垃圾_2.png"],
+    "template": [
+      "签到小垃圾.png",
+      "签到小垃圾_2.png"
+    ],
     "post_delay": 1000,
     "roi": [
       349,
@@ -244,7 +270,8 @@
   "领取奖励_花合战奖励": {
     "next": "领取奖励_打开花合战",
     "interrupt": [
-      "打开底部菜单" ]
+      "打开底部菜单"
+    ]
   },
   "领取奖励_打开花合战": {
     "recognition": "FeatureMatch",
@@ -255,17 +282,26 @@
     ],
     "post_delay": 1000,
     "roi": [
-310,586,903,101
+      310,
+      586,
+      903,
+      101
     ],
     "next": "领取奖励_花合战_点击任务"
   },
   "领取奖励_花合战_点击任务": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": ["花合战_任务.png","花合战_任务_红点.png"],
+    "template": [
+      "花合战_任务.png",
+      "花合战_任务_红点.png"
+    ],
     "post_delay": 1000,
     "roi": [
-1180,292,90,143
+      1180,
+      292,
+      90,
+      143
     ],
     "next": "领取奖励_花合战_全部领取",
     "timeout": 1000,
@@ -274,10 +310,15 @@
   "领取奖励_花合战_全部领取": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": ["花合战_全部领取.png"],
+    "template": [
+      "花合战_全部领取.png"
+    ],
     "post_delay": 1000,
     "roi": [
-      828,494,239,225
+      828,
+      494,
+      239,
+      225
     ],
     "next": "返回庭院"
   }

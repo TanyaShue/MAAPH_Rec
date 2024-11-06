@@ -10,8 +10,22 @@
     "roi": [
       494,567,155,141
     ],
-    "next": ["阴阳寮奖励领取_阴阳寮金币领取","阴阳寮奖励领取_结界奖励"],
+    "next": ["阴阳寮奖励领取_阴阳寮奖励领取","阴阳寮奖励领取_阴阳寮金币领取","阴阳寮奖励领取_结界奖励"],
     "post_delay": 4000
+  },
+  "阴阳寮奖励领取_阴阳寮奖励领取": {
+    "recognition": "FeatureMatch",
+    "action": "Custom",
+    "custom_action": "TaskList",
+    "custom_action_param": {
+      "task_list": [
+        "阴阳寮奖励领取_阴阳寮金币领取",
+        "阴阳寮奖励领取_阴阳寮体力领取"
+      ]
+    },
+    "template": "阴阳寮_奖励.png",
+    "post_delay": 1000,
+    "next": "阴阳寮奖励领取_点击结界"
   },
   "阴阳寮奖励领取_阴阳寮金币领取": {
     "recognition": "FeatureMatch",
@@ -33,8 +47,25 @@
     "post_delay": 1000,
     "target": [453,481,437,110]
   },
-  "阴阳寮奖励领取_结界奖励": {
-    "next": "阴阳寮奖励领取_点击结界"
+  "阴阳寮奖励领取_阴阳寮体力领取": {
+    "recognition": "FeatureMatch",
+    "action": "Click",
+    "template": "阴阳寮_体力.png",
+    "post_delay": 1000,
+    "next": "阴阳寮奖励领取_领取体力"
+  },
+  "阴阳寮奖励领取_领取体力": {
+    "recognition": "OCR",
+    "action": "Click",
+    "expected": "领取",
+    "post_delay": 2000,
+    "roi": [568,426,139,59],
+    "next": "阴阳寮奖励领取_体力领取_点击一下屏幕"
+  },
+  "阴阳寮奖励领取_体力领取_点击一下屏幕": {
+    "action": "Click",
+    "post_delay": 1000,
+    "target": [453,481,437,110]
   },
   "阴阳寮奖励领取_点击结界": {
     "recognition": "FeatureMatch",

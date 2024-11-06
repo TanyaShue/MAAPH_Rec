@@ -162,7 +162,8 @@
       69,
       87,
       79
-    ]
+    ],
+    "next": "返回庭院"
   },
   "领取奖励_每日勾玉": {
     "recognition": "FeatureMatch",
@@ -201,7 +202,8 @@
       392,
       114
     ],
-    "post_delay": 1000
+    "post_delay": 1000,
+    "next": "返回庭院"
   },
   "领取奖励_日常体力": {
     "recognition": "FeatureMatch",

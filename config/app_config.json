@@ -1,5 +1,5 @@
 {
-    "DEBUG": false,
+    "DEBUG": true,
     "server_host": "localhost",
     "server_port": 54345
 }

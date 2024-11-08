@@ -127,7 +127,7 @@
   },
   "现世逢魔_装备式神预设": {
     "recognition": "FeatureMatch",
-    "template": "现世逢魔_装备式神预设.png",
+    "template": "现世逢魔_式神录.png",
     "action": "Custom",
     "custom_action": "SwitchSoul",
     "custom_action_param": {
@@ -144,7 +144,7 @@
       50,
       40
     ],
-    "post_delay":2000,
+    "post_delay":4000,
     "next": "开始自动挑战首领"
   },
   "开始自动挑战首领": {

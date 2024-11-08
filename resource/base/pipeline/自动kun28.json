@@ -1,33 +1,3 @@
 {
-  "自动kun28": {
-    "next": [
-      "kun28_识别探索特征"
-    ],
-    "interrupt": "点击探索",
-    "on_error": "返回庭院"
-  },
-  "kun28_识别探索特征": {
-    "recognition": "TemplateMatch",
-    "template": [
-      "探索_六道之门.png",
-      "探索_地域鬼王.png",
-      "探索_式神委派.png",
-      "探索_御魂.png"
-    ],
-    "roi": [
-      9,
-      575,
-      1137,
-      144
-    ],
-    "post_delay": 1000,
-    "next": "kun28_识别第28章",
-    "interrupt": "kun28_上滑章节列表"
-  },
-  "kun28_识别第28章": {
-    "post_delay": 1000
-  },
-  "kun28_上滑章节列表": {
-    "post_delay": 1000
-  }
+
 }

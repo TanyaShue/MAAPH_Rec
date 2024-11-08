@@ -14,7 +14,6 @@
     "post_delay": 4000
   },
   "阴阳寮奖励领取_阴阳寮奖励领取": {
-    "recognition": "FeatureMatch",
     "action": "Custom",
     "custom_action": "TaskList",
     "custom_action_param": {
@@ -23,7 +22,6 @@
         "阴阳寮奖励领取_阴阳寮体力领取"
       ]
     },
-    "template": "阴阳寮_奖励.png",
     "post_delay": 1000,
     "next": "阴阳寮奖励领取_点击结界"
   },
@@ -31,6 +29,7 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": "阴阳寮_金币礼包.png",
+    "timeout": 1000,
     "post_delay": 1000,
     "next": "阴阳寮奖励领取_领取寮金币"
   },
@@ -50,16 +49,9 @@
   "阴阳寮奖励领取_阴阳寮体力领取": {
     "recognition": "FeatureMatch",
     "action": "Click",
+    "timeout": 1000,
     "template": "阴阳寮_体力.png",
     "post_delay": 1000,
-    "next": "阴阳寮奖励领取_领取体力"
-  },
-  "阴阳寮奖励领取_领取体力": {
-    "recognition": "OCR",
-    "action": "Click",
-    "expected": "领取",
-    "post_delay": 2000,
-    "roi": [568,426,139,59],
     "next": "阴阳寮奖励领取_体力领取_点击一下屏幕"
   },
   "阴阳寮奖励领取_体力领取_点击一下屏幕": {
@@ -85,7 +77,6 @@
     ],
     "inverse": true,
     "post_delay": 1000,
-    "roi": [797,358,268,156],
     "next": ["阴阳寮奖励领取_结界奖励领取_识别我的寄养","阴阳寮奖励领取_结界奖励领取_识别寄养栏位"],
     "interrupt": "阴阳寮奖励领取_结界奖励领取_点击式神育成"
   },

@@ -53,10 +53,7 @@
     "recognition": "TemplateMatch",
     "action": "Click",
     "roi": [
-      115,
-      119,
-      1102,
-      597
+      123,108,1061,570
     ],
     "template": "突破_进攻.png",
     "post_delay": 10000,
@@ -74,7 +71,8 @@
       158,
       65
     ],
-    "expected": "结界突破"
+    "expected": "结界突破",
+    "post_delay": 1000
   },
   "突破_结束战斗": {
     "recognition": "OCR",
@@ -170,7 +168,8 @@
       276,
       94
     ],
-    "next": "突破_点击进攻"
+    "next": "突破_点击进攻",
+    "timeout": 2000
   },
   "挑战第二个结界": {
     "recognition": "FeatureMatch",
@@ -189,7 +188,8 @@
       279,
       83
     ],
-    "next": "突破_点击进攻"
+    "next": "突破_点击进攻",
+    "timeout": 2000
   },
   "挑战第三个结界": {
     "recognition": "FeatureMatch",
@@ -208,7 +208,8 @@
       204,
       94
     ],
-    "next": "突破_点击进攻"
+    "next": "突破_点击进攻",
+    "timeout": 2000
   },
   "挑战第四个结界": {
     "recognition": "FeatureMatch",
@@ -227,7 +228,8 @@
       292,
       97
     ],
-    "next": "突破_点击进攻"
+    "next": "突破_点击进攻",
+    "timeout": 2000
   },
   "挑战第五个结界": {
     "recognition": "FeatureMatch",
@@ -246,7 +248,8 @@
       216,
       104
     ],
-    "next": "突破_点击进攻"
+    "next": "突破_点击进攻",
+    "timeout": 2000
   },
   "挑战第六个结界": {
     "recognition": "FeatureMatch",
@@ -265,7 +268,8 @@
       216,
       103
     ],
-    "next": "突破_点击进攻"
+    "next": "突破_点击进攻",
+    "timeout": 2000
   },
   "挑战第七个结界": {
     "recognition": "FeatureMatch",
@@ -284,7 +288,8 @@
       217,
       105
     ],
-    "next": "突破_点击进攻"
+    "next": "突破_点击进攻",
+    "timeout": 2000
   },
   "挑战第八个结界": {
     "recognition": "FeatureMatch",
@@ -303,7 +308,8 @@
       212,
       99
     ],
-    "next": "突破_点击进攻"
+    "next": "突破_点击进攻",
+    "timeout": 2000
   },
   "挑战第九个结界": {
     "recognition": "FeatureMatch",
@@ -322,7 +328,8 @@
       218,
       109
     ],
-    "next": "突破_最后一个进攻"
+    "next": "突破_最后一个进攻",
+    "timeout": 2000
   },
   "突破_最后一个进攻": {
     "recognition": "TemplateMatch",

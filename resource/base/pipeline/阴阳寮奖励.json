@@ -65,8 +65,14 @@
     "template": "阴阳寮_结界.png",
     "post_delay": 4000,
     "roi": [1041,591,111,119],
-    "next": "阴阳寮奖励领取_结界奖励领取",
+    "next": "阴阳寮奖励领取_识别结界特征",
     "interrupt": ["阴阳寮奖励领取_结界奖励领取_领取体力","阴阳寮奖励领取_结界奖励领取_领取经验"]
+  },
+  "阴阳寮奖励领取_识别结界特征": {
+    "recognition": "FeatureMatch",
+    "template": "阴阳寮_结界_结界换装.png",
+    "post_delay": 500,
+    "next": ["阴阳寮奖励领取_结界奖励领取"]
   },
   "阴阳寮奖励领取_结界奖励领取": {
     "recognition": "FeatureMatch",

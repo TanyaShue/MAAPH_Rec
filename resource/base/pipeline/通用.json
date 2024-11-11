@@ -37,10 +37,7 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "roi": [
-      0,
-      4,
-      138,
-      100
+0,0,116,94
     ],
     "template": ["返回_蓝色.png","返回_蓝色_2.png"],
     "post_delay": 2000
@@ -49,10 +46,7 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "roi": [
-      0,
-      4,
-      138,
-      100
+0,0,116,94
     ],
     "template": ["返回_黄色.png","返回_黄色_2.png"],
     "post_delay": 2000
@@ -61,10 +55,7 @@
     "recognition": "TemplateMatch",
     "action": "Click",
     "roi": [
-      0,
-      4,
-      138,
-      100
+0,0,116,94
     ],
     "template": ["返回_蓝色.png","返回_蓝色_2.png"],
     "post_delay": 2000
@@ -73,10 +64,7 @@
     "recognition": "TemplateMatch",
     "action": "Click",
     "roi": [
-      0,
-      4,
-      138,
-      100
+0,0,116,94
     ],
     "template": ["返回_黄色.png","返回_黄色_2.png"],
     "post_delay": 2000

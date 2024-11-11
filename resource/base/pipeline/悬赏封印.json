@@ -110,6 +110,13 @@
     },
     "post_delay": 1000
   },
+  "悬赏封印_识别完成度": {
+    "recognition": "OCR",
+    "expected": "^(\\d)\\/\\1$|^(\\d)7\\2$",
+    "roi": [
+16,230,114,60
+    ]
+  },
   "悬赏封印_识别宝箱": {
     "recognition": "FeatureMatch",
     "action": "Click",
@@ -141,7 +148,10 @@
     "recognition": "OCR",
     "expected": "悬赏封印",
     "roi": [
-      8,144,122,387
+      8,
+      144,
+      122,
+      387
     ],
     "post_delay": 1000
   },

@@ -12,8 +12,16 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": "探索_结界突破.png",
-    "roi": [0,599,1193,120],
-    "next": ["结束突破","结界突破_点击式神录"]
+    "roi": [
+      0,
+      599,
+      1193,
+      120
+    ],
+    "next": [
+      "结束突破",
+      "结界突破_点击式神录"
+    ]
   },
   "结界突破_点击式神录": {
     "recognition": "FeatureMatch",
@@ -53,7 +61,10 @@
     "recognition": "TemplateMatch",
     "action": "Click",
     "roi": [
-      93,79,1092,640
+      93,
+      79,
+      1092,
+      640
     ],
     "template": "突破_进攻.png",
     "post_delay": 10000,
@@ -61,7 +72,8 @@
     "next": [
       "识别突破界面"
     ],
-    "interrupt": "突破_结束战斗"
+    "interrupt": "突破_结束战斗",
+    "rate_limit": 2000
   },
   "识别突破界面": {
     "recognition": "OCR",
@@ -89,7 +101,8 @@
       1002,
       168
     ],
-    "action": "Click"
+    "action": "Click",
+    "post_delay": 1000
   },
   "突破_领取奖励": {
     "recognition": "OCR",
@@ -117,8 +130,26 @@
       66
     ],
     "expected": "\\b0\\/30\\b",
-    "next": "关闭结界突破",
+    "next": "突破_识别探索特征",
+    "interrupt": "关闭结界突破",
     "post_delay": 2000
+  },
+  "突破_识别探索特征": {
+    "recognition": "TemplateMatch",
+    "template": [
+      "探索_六道之门.png",
+      "探索_地域鬼王.png",
+      "探索_式神委派.png",
+      "探索_御魂.png"
+    ],
+    "roi": [
+      9,
+      575,
+      1137,
+      144
+    ],
+    "post_delay": 1000,
+    "next": "返回庭院"
   },
   "关闭结界突破": {
     "recognition": "FeatureMatch",
@@ -130,8 +161,7 @@
       116
     ],
     "template": "结界突破_关闭.png",
-    "post_delay": 2000,
-    "next": "返回庭院"
+    "post_delay": 2000
   },
   "开始自动结界": {
     "next": [
@@ -366,7 +396,10 @@
   "突破_重新挑战": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": ["战斗_返回.png","战斗_返回_原版.png"],
+    "template": [
+      "战斗_返回.png",
+      "战斗_返回_原版.png"
+    ],
     "roi": [
       0,
       4,

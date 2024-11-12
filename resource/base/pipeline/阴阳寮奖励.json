@@ -23,7 +23,8 @@
       ]
     },
     "post_delay": 1000,
-    "next": "阴阳寮奖励领取_点击结界"
+    "next": "阴阳寮奖励领取_识别结界特征",
+    "interrupt": "阴阳寮奖励领取_点击结界"
   },
   "阴阳寮奖励领取_阴阳寮金币领取": {
     "recognition": "FeatureMatch",
@@ -72,7 +73,8 @@
     "recognition": "FeatureMatch",
     "template": "阴阳寮_结界_结界换装.png",
     "post_delay": 500,
-    "next": ["阴阳寮奖励领取_结界奖励领取"]
+    "next": "阴阳寮奖励领取_结界奖励领取",
+    "interrupt": ["阴阳寮奖励领取_结界奖励领取_领取体力","阴阳寮奖励领取_结界奖励领取_领取经验"]
   },
   "阴阳寮奖励领取_结界奖励领取": {
     "recognition": "FeatureMatch",
@@ -135,14 +137,16 @@
     "action": "Click",
     "template": ["阴阳寮_结界_体力.png","阴阳寮_结界_体力_半满.png"],
     "post_delay": 1000,
-    "next": "阴阳寮奖励领取_结界奖励领取_领取体力_取出"
+    "next": "阴阳寮奖励领取_结界奖励领取_领取体力_取出",
+    "timeout": 1000
   },
   "阴阳寮奖励领取_结界奖励领取_领取体力_取出": {
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": "阴阳寮_结界_体力_取出.png",
     "post_delay": 1000,
-    "next": "阴阳寮奖励领取_结界奖励领取_点击一下屏幕"
+    "next": "阴阳寮奖励领取_结界奖励领取_点击一下屏幕",
+    "timeout": 1000
   },
   "阴阳寮奖励领取_结界奖励领取_点击一下屏幕": {
     "action": "Click",
@@ -155,13 +159,15 @@
     "action": "Click",
     "template": "阴阳寮_结界_经验.png",
     "post_delay": 1000,
-    "next": "阴阳寮奖励领取_结界奖励领取_领取经验_提取"
+    "next": "阴阳寮奖励领取_结界奖励领取_领取经验_提取",
+    "timeout": 1000
   },
   "阴阳寮奖励领取_结界奖励领取_领取经验_提取": {
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": "阴阳寮_结界_经验_提取.png",
-    "post_delay": 1000
+    "post_delay": 1000,
+    "timeout": 1000
   },
   "阴阳寮奖励领取_结界奖励领取_关闭食盒界面": {
     "recognition": "FeatureMatch",

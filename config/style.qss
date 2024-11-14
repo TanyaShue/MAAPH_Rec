@@ -87,6 +87,7 @@ QPushButton:pressed {
 
 QPushButton#startButton,
 QPushButton#settingButton,
+QPushButton#addButton,
 QPushButton#logButton {
     background-color: #0277BD;
     color: #FFFFFF;

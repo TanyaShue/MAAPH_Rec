@@ -149,10 +149,10 @@
     "next": "开始自动挑战首领"
   },
   "开始自动挑战首领": {
-    "recognition": "OCR",
+    "recognition": "FeatureMatch",
     "action": "Click",
-    "roi": [1052,530,227,180],
-    "expected": "准备",
+    "roi": [1091,501,167,173],
+    "template": "现世封魔_准备.png",
     "timeout": 350000,
     "post_delay": 30000,
     "pre_delay": 3000,
@@ -166,6 +166,7 @@
     "roi": [501,658,295,53],
     "timeout": 500000,
     "rate_limit": 2000,
+    "target": [602,422,249,282],
     "next": ["现世逢魔_首领_返回"]
   },
   "现世逢魔_首领_返回": {

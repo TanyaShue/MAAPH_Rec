@@ -5,6 +5,7 @@ docs/.vuepress/.temp
 *.d
 *.pyc
 
+config/projects.json
 
 # test
 

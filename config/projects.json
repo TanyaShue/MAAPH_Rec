@@ -5,7 +5,7 @@
             "program_name": "阴阳师",
             "adb_config": {
                 "adb_path": "D:\\leidian\\LDPlayer9\\adb.exe",
-                "adb_address": "127.0.0.1:5555"
+                "address": "127.0.0.1:5555"
             },
             "selected_tasks": [
                 "打开游戏",
@@ -52,7 +52,7 @@
             "program_name": "阴阳师",
             "adb_config": {
                 "adb_path": "D:\\leidian\\LDPlayer9\\adb.exe",
-                "adb_address": "127.0.0.1:5557"
+                "address": "127.0.0.1:5557"
             },
             "selected_tasks": [
                 "启动加速器",
@@ -96,6 +96,16 @@
                     "input": "突破"
                 }
             }
+        },
+        {
+            "project_name": "vv",
+            "program_name": "vv",
+            "adb_config": {
+                "adb_path": "C:\\Android\\adb.exe",
+                "address": "emulator-5554"
+            },
+            "selected_tasks": [],
+            "option": {}
         }
     ]
 }

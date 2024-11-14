@@ -1,5 +1,9 @@
 {
-    "DEBUG": true,
+    "DEBUG": false,
     "server_host": "localhost",
-    "server_port": 54345
+    "server_port": 54345,
+    "log_level": "INFO",
+    "max_workers": 10,
+    "task_timeout": 300,
+    "start_script": true
 }

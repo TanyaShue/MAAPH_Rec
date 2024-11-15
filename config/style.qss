@@ -84,7 +84,6 @@ QPushButton {
     border: 1px solid #E0E0E0;
     border-radius: 4px;
     padding: 6px 12px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 QPushButton:hover {
@@ -102,7 +101,6 @@ QPushButton#logButton {
     background-color: #0277BD;
     color: #FFFFFF;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 QPushButton#startButton:hover,
@@ -133,7 +131,6 @@ QTableWidget {
     background-color: #FFFFFF;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 QTableWidget::item {

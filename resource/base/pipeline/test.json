@@ -2,7 +2,7 @@
   "testAction": {
     "recognition": "DirectHit",
     "action": "Custom",
-    "custom_action": "RandomSwipe",
+    "custom_action": "TaskLog",
     "custom_action_param": {
       "start_roi": [
         846,

@@ -5,5 +5,5 @@
     "log_level": "INFO",
     "max_workers": 10,
     "task_timeout": 300,
-    "start_script": true
+    "start_script": false
 }

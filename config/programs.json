@@ -148,6 +148,11 @@
                 "custom_action_param": {
                   "group_name": "{value}"
                 }
+              },
+              "开始自动挑战鬼王" :{
+                "custom_action_param": {
+                  "group_name": "{value}"
+                }
               }
             }
           }
@@ -158,6 +163,11 @@
             "default": "默认队伍",
             "pipeline_override": {
               "装备地狱鬼王预设": {
+                "custom_action_param": {
+                  "team_name": "{value}"
+                }
+              },
+              "开始自动挑战鬼王" :{
                 "custom_action_param": {
                   "team_name": "{value}"
                 }

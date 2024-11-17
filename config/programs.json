@@ -118,7 +118,7 @@
             "name": "结界预设分组",
             "default": "默认分组",
             "pipeline_override": {
-              "自动结界": {
+              "装备突破预设": {
                 "custom_action_param": {
                   "group_name": "{value}"
                 }
@@ -131,7 +131,7 @@
             "name": "结界预设队伍",
             "default": "默认队伍",
             "pipeline_override": {
-              "自动结界": {
+              "装备突破预设": {
                 "custom_action_param": {
                   "team_name": "{value}"
                 }

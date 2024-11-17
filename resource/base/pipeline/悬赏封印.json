@@ -157,6 +157,17 @@
     ],
     "post_delay": 1000
   },
+  "悬赏封印_识别挑战次数": {
+    "recognition": "OCR",
+    "expect": "^(\\d+)/?(7?\\d+)$",
+    "roi": [
+      8,
+      144,
+      122,
+      387
+    ],
+    "post_delay": 1000
+  },
   "识别未发现妖怪": {
     "recognition": "OCR",
     "expected": "线索",

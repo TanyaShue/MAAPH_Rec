@@ -99,6 +99,7 @@
       "签到.png",
       "签到_2.png",
       "勾玉.png",
+      "勾玉_2.png",
       "签到小垃圾.png",
       "签到小垃圾_2.png",
       "签到小垃圾_3.png",
@@ -162,8 +163,8 @@
     "next": "关闭签到界面"
   },
   "关闭签到界面": {
-    "recognition": "OCR",
-    "expected": [
+    "recognition": "FeatureMatch",
+    "template": [
       "关闭.png",
       "关闭_2.png"
     ],
@@ -180,7 +181,7 @@
   "领取奖励_每日勾玉": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": "勾玉.png",
+    "template": ["勾玉.png","勾玉_2.png"],
     "post_delay": 1000,
     "roi": [
       22,

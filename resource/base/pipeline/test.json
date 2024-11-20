@@ -37,14 +37,7 @@
   }
 },
   "testOCR": {
-    "recognition": "OCR",
-    "expected":"\\d+",
-    "roi":[
-      1175,
-      15,
-      98,
-      77
-    ]
+    "recognition": "OCR"
   },
   "testChallengeBoss": {
     "recognition": "DirectHit",

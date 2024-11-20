@@ -2,6 +2,7 @@
   "programs": [
     {
       "program_name": "阴阳师",
+      "program_icon": "/icons/apps_icons/R.png",
       "program_tasks": [
         {
           "task_name": "打开游戏",
@@ -202,22 +203,6 @@
           }
         }
       }
-    },
-    {
-      "program_name": "明日方舟",
-      "program_tasks": [
-        {
-          "task_name": "任务1",
-          "task_entry": null,
-          "option": []
-        },
-        {
-          "task_name": "任务3",
-          "task_entry": null,
-          "option": []
-        }
-      ],
-      "option": {}
     }
   ]
 }

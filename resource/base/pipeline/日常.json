@@ -1,0 +1,24 @@
+{
+  "日常_任务列表": {
+    "action": "Custom",
+    "custom_action": "TaskList",
+    "custom_action_param": {
+      "task_list": [
+        "日常_送友情点"
+      ]
+    },
+    "on_error": "返回庭院"
+  },
+  "日常_送友情点": {
+    "next": "日常_点击好友",
+    "interrupt": [
+      "打开底部菜单"
+    ]
+  },
+  "日常_点击好友": {
+    "recognition": "FeatureMatch",
+    "action": "Click",
+    "template": "庭院_好友.png",
+    "post_delay": 2000
+  }
+}

@@ -45,6 +45,11 @@
           ]
         },
         {
+          "task_name": "日常",
+          "task_entry": "日常_任务列表",
+          "option": []
+        },
+        {
           "task_name": "领取奖励",
           "task_entry": "领取奖励_任务列表",
           "option": []
@@ -52,11 +57,6 @@
         {
           "task_name": "结界奖励领取",
           "task_entry": "阴阳寮奖励领取",
-          "option": []
-        },
-        {
-          "task_name": "测试",
-          "task_entry": "testAction",
           "option": []
         }
       ],

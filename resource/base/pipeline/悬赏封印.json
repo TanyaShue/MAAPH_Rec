@@ -117,6 +117,21 @@
 16,230,114,60
     ]
   },
+  "悬赏封印_识别妖怪_图片识别": {
+    "recognition": "FeatureMatch",
+    "action": "Click",
+    "template": [
+      "悬赏封印_悬赏封印文字.png"
+    ],
+    "timeout": 1000,
+    "roi": [
+      8,
+      144,
+      122,
+      387
+    ],
+    "post_delay": 2000
+  },
   "悬赏封印_识别宝箱": {
     "recognition": "FeatureMatch",
     "action": "Click",
@@ -194,6 +209,7 @@
           "关闭.png",
         "关闭_2.png"
       ],
+      "roi": [842,68,347,269],
     "action": "Click",
     "post_delay": 1000
   },

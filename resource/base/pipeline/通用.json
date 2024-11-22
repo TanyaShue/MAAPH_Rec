@@ -134,7 +134,8 @@
     "recognition": "FeatureMatch",
     "template": [
       "庭院_卷轴.png",
-      "庭院_卷轴_鬼金羊.png"
+      "庭院_卷轴_鬼金羊.png",
+      "庭院_卷轴_不见岳.png"
     ],
     "action": "Click",
     "post_delay": 1000,
@@ -144,6 +145,11 @@
       216,
       191
     ]
+  },
+  "点击底部菜单位置": {
+    "action": "Click",
+    "post_delay": 1000,
+    "target": [1177,578,63,92]
   },
   "左滑一下屏幕": {
     "is_sub": true,

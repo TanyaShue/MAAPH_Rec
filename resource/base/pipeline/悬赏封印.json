@@ -47,7 +47,7 @@
       157
     ],
     "next": "庭院_点击式神录",
-    "interrupt": "打开底部菜单",
+    "interrupt": ["打开底部菜单","点击底部菜单位置"],
     "on_error": "返回庭院"
   },
   "庭院_点击式神录": {
@@ -186,6 +186,15 @@
       979,
       56
     ],
+    "post_delay": 1000
+  },
+    "悬赏封印_关闭章节界面": {
+      "recognition": "TemplateMatch",
+      "template": [
+          "关闭.png",
+        "关闭_2.png"
+      ],
+    "action": "Click",
     "post_delay": 1000
   },
     "悬赏_线索界面": {

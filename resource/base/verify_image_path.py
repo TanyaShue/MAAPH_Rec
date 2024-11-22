@@ -1,4 +1,11 @@
 # -*- coding: UTF-8 -*-
+"""
+该脚本主要用于添加资源文件中的图片路径校验,只需要文件名相同,则会认为为同一图片,然后校验路径是否正确，不正确则修改路径，最后将修改后的文件保存到新的文件夹中
+
+"""
+
+
+
 import os
 import shutil
 import json
@@ -100,5 +107,5 @@ if __name__ == "__main__":
     # 第三步：更新并校验 JSON 文件
     update_json_files(pipeline_dir, image_mapping)
 
-    print("处理完成！")
+    print("一切顺利 !!！")
 

@@ -11,7 +11,7 @@
   "结界突破_点击结界突破": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": "探索_结界突破.png",
+    "template": "探索/探索_结界突破.png",
     "roi": [
       0,
       599,
@@ -32,7 +32,7 @@
       90,
       114
     ],
-    "template": "探索_式神录.png",
+    "template": "探索/探索_式神录.png",
     "next": "装备突破预设",
     "post_delay": 1000
   },
@@ -137,10 +137,10 @@
   "突破_识别探索特征": {
     "recognition": "TemplateMatch",
     "template": [
-      "探索_六道之门.png",
-      "探索_地域鬼王.png",
-      "探索_式神委派.png",
-      "探索_御魂.png"
+      "探索/探索_六道之门.png",
+      "探索/探索_地域鬼王.png",
+      "探索/探索_式神委派.png",
+      "探索/探索_御魂.png"
     ],
     "roi": [
       9,
@@ -160,7 +160,7 @@
       115,
       116
     ],
-    "template": "结界突破_关闭.png",
+    "template": "通用图标/结界突破_关闭.png",
     "post_delay": 2000
   },
   "开始自动结界": {
@@ -397,8 +397,8 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": [
-      "战斗_返回.png",
-      "战斗_返回_原版.png"
+      "通用图标/战斗_返回.png",
+      "通用图标/战斗_返回_原版.png"
     ],
     "roi": [
       0,

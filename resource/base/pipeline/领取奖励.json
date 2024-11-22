@@ -33,7 +33,7 @@
   "邮件_领取奖励_点击关闭": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": "关闭.png",
+    "template": "通用图标/关闭.png",
     "post_delay": 2000
   },
   "邮件_全部领取": {
@@ -167,20 +167,26 @@
   "关闭签到界面": {
     "recognition": "FeatureMatch",
     "template": [
-      "关闭.png",
-      "关闭_2.png"
+      "通用图标/关闭.png",
+      "通用图标/关闭_2.png"
     ],
     "action": "Click",
     "post_delay": 1000,
     "roi": [
-     1002,20,134,188
+      1002,
+      20,
+      134,
+      188
     ],
     "next": "返回庭院"
   },
   "领取奖励_每日勾玉": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": ["勾玉.png","勾玉_2.png"],
+    "template": [
+      "勾玉.png",
+      "勾玉_2.png"
+    ],
     "post_delay": 1000,
     "roi": [
       22,
@@ -207,7 +213,6 @@
     ],
     "next": "领取奖励_点击一下屏幕底部"
   },
-
   "领取奖励_日常御魂加成": {
     "recognition": "FeatureMatch",
     "action": "Click",
@@ -257,8 +262,8 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": [
-      "庭院_商店.png",
-      "庭院_商店_红点.png"
+      "庭院/庭院_商店.png",
+      "庭院/庭院_商店_红点.png"
     ],
     "post_delay": 1000,
     "roi": [
@@ -336,8 +341,8 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": [
-      "庭院_花合战.png",
-      "庭院_花合战_红点.png"
+      "庭院/庭院_花合战.png",
+      "庭院/庭院_花合战_红点.png"
     ],
     "post_delay": 1000,
     "roi": [

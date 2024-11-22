@@ -1,24 +1,24 @@
 {
-  "日常_任务列表": {
+  "鏃ュ父_浠诲姟鍒楄〃": {
     "action": "Custom",
     "custom_action": "TaskList",
     "custom_action_param": {
       "task_list": [
-        "日常_送友情点"
+        "鏃ュ父_閫佸弸鎯呯偣"
       ]
     },
-    "on_error": "返回庭院"
+    "on_error": "杩斿洖搴櫌"
   },
-  "日常_送友情点": {
-    "next": "日常_点击好友",
+  "鏃ュ父_閫佸弸鎯呯偣": {
+    "next": "鏃ュ父_鐐瑰嚮濂藉弸",
     "interrupt": [
-      "打开底部菜单"
+      "鎵撳紑搴曢儴鑿滃崟"
     ]
   },
-  "日常_点击好友": {
+  "鏃ュ父_鐐瑰嚮濂藉弸": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": "庭院_好友.png",
+    "template": "搴櫌/搴櫌_濂藉弸.png",
     "post_delay": 2000
   }
 }

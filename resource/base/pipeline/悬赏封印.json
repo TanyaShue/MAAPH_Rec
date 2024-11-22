@@ -9,8 +9,8 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": [
-      "悬赏封印.png",
-      "悬赏封印_完成.png"
+      "悬赏封印/悬赏封印.png",
+      "悬赏封印/悬赏封印_完成.png"
     ],
     "roi": [
       7,
@@ -39,7 +39,7 @@
   "悬赏封印_点击叉叉": {
     "recognition": "TemplateMatch",
     "action": "Click",
-    "template": "关闭.png",
+    "template": "通用图标/关闭.png",
     "roi": [
       1127,
       74,
@@ -57,8 +57,8 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": [
-      "庭院_式神录.png",
-      "庭院_式神录_2.png"
+      "庭院/庭院_式神录.png",
+      "庭院/庭院_式神录_2.png"
     ],
     "post_delay": 1000,
     "roi": [
@@ -72,10 +72,10 @@
   "探索_悬赏_识别探索特征": {
     "recognition": "TemplateMatch",
     "template": [
-      "探索_六道之门.png",
-      "探索_地域鬼王.png",
-      "探索_式神委派.png",
-      "探索_御魂.png"
+      "探索/探索_六道之门.png",
+      "探索/探索_地域鬼王.png",
+      "探索/探索_式神委派.png",
+      "探索/探索_御魂.png"
     ],
     "roi": [
       9,
@@ -127,7 +127,7 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": [
-      "悬赏封印_悬赏封印文字.png"
+      "悬赏封印/悬赏封印_悬赏封印文字.png"
     ],
     "timeout": 1000,
     "roi": [
@@ -142,8 +142,8 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "template": [
-      "悬赏_宝箱.png",
-      "悬赏_宝箱2.png"
+      "悬赏封印/悬赏_宝箱.png",
+      "悬赏封印/悬赏_宝箱2.png"
     ],
     "timeout": 1000,
     "next": "悬赏封印_领取宝箱奖励",
@@ -212,8 +212,8 @@
   "悬赏封印_关闭章节界面": {
     "recognition": "TemplateMatch",
     "template": [
-      "关闭.png",
-      "关闭_2.png"
+      "通用图标/关闭.png",
+      "通用图标/关闭_2.png"
     ],
     "roi": [
       842,
@@ -333,7 +333,7 @@
   "探索_悬赏_自动挑战": {
     "recognition": "ColorMatch",
     "action": "Click",
-    "template": "探索_自动挑战.png",
+    "template": "通用图标/探索_自动挑战.png",
     "method": 40,
     "lower": [
       [
@@ -363,7 +363,7 @@
   "探索_悬赏_自动轮换": {
     "recognition": "ColorMatch",
     "action": "Click",
-    "template": "探索_自动挑战.png",
+    "template": "通用图标/探索_自动挑战.png",
     "enabled": true,
     "method": 40,
     "lower": [
@@ -403,7 +403,7 @@
   },
   "探索_悬赏_关闭悬赏章节界面": {
     "recognition": "TemplateMatch",
-    "template": "关闭.png",
+    "template": "通用图标/关闭.png",
     "action": "Click",
     "roi": [
       997,

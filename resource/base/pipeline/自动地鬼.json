@@ -1,12 +1,14 @@
 {
   "自动地鬼": {
-    "next": ["点击地域鬼王"],
+    "next": [
+      "点击地域鬼王"
+    ],
     "interrupt": "点击探索",
     "on_error": "返回庭院"
   },
   "点击地域鬼王": {
     "recognition": "TemplateMatch",
-    "template": "探索_地域鬼王.png",
+    "template": "探索/探索_地域鬼王.png",
     "action": "Click",
     "next": "地鬼_点击式神录",
     "target": [
@@ -15,7 +17,7 @@
       83,
       88
     ],
-    "post_delay":2000
+    "post_delay": 2000
   },
   "地鬼_点击式神录": {
     "action": "Click",
@@ -26,7 +28,7 @@
       82,
       86
     ],
-    "post_delay":3000
+    "post_delay": 3000
   },
   "装备地狱鬼王预设": {
     "action": "Custom",
@@ -36,7 +38,7 @@
       "team_name": "地域鬼王"
     },
     "next": "地鬼_御魂_返回",
-    "post_delay":2000
+    "post_delay": 2000
   },
   "地鬼_御魂_返回": {
     "action": "Click",
@@ -46,17 +48,17 @@
       50,
       40
     ],
-    "post_delay":2000,
+    "post_delay": 2000,
     "next": "开始自动挑战鬼王"
   },
-  "开始自动挑战鬼王":{
+  "开始自动挑战鬼王": {
     "action": "Custom",
     "custom_action": "ChallengeDungeonBoss",
     "custom_action_param": {
       "group_name": "地鬼",
       "team_name": "地域鬼王"
     },
-    "post_delay":2000,
+    "post_delay": 2000,
     "next": "返回庭院"
   }
 }

@@ -11,6 +11,23 @@ QWidget#NavigationBar {
     border-right: 1px solid #E0E0E0;
 }
 
+/* 限制按钮大小，适合图标 */
+QPushButton#startButton,
+QPushButton#settingButton,
+QPushButton#addButton,
+QPushButton#infoButton,
+QPushButton#logButton {
+    min-width: 36px;
+    max-width: 36px;
+    min-height: 24px;
+    max-height: 36px;
+    padding: 0; /* 移除内边距，确保图标居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 原有的导航按钮样式 */
 QPushButton#NavButton {
     background-color: transparent;
     color: #607D8B;
@@ -96,9 +113,8 @@ QPushButton:pressed {
 
 QPushButton#startButton,
 QPushButton#settingButton,
-QPushButton#addButton,
 QPushButton#logButton {
-    background-color: #0277BD;
+    //background-color: #0277BD;
     color: #FFFFFF;
     border-radius: 4px;
 }

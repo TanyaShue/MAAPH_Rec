@@ -22,9 +22,6 @@ QPushButton#logButton {
     min-height: 24px;
     max-height: 36px;
     padding: 0; /* 移除内边距，确保图标居中 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* 原有的导航按钮样式 */

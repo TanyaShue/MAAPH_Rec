@@ -47,7 +47,9 @@
         {
           "task_name": "日常",
           "task_entry": "日常_任务列表",
-          "option": []
+          "option": [
+            "是否启用送友情点"
+          ]
         },
         {
           "task_name": "领取奖励",
@@ -198,6 +200,16 @@
                 "custom_action_param": {
                   "team_name": "{value}"
                 }
+              }
+            }
+          }
+        },
+        "是否启用送友情点": {
+          "boole": {
+            "default": false,
+            "pipeline_override": {
+              "日常_送友情点": {
+                "enabled": "{boole}"
               }
             }
           }

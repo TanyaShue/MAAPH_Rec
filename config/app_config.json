@@ -5,7 +5,7 @@
   "log_level": "INFO",
   "max_workers": 10,
   "task_timeout": 300,
-  "start_script": false,
+  "start_script": true,
   "scheduler_enabled": false,
   "scheduler_timezone": "Asia/Shanghai",
   "scheduler_jobs": [

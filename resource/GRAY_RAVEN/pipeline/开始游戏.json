@@ -1,0 +1,6 @@
+{
+  "打开游戏": {
+    "action": "StartApp",
+    "package": "com.kurogame.haru.hero/com.haru.herousdk.SplashActivity"
+  }
+}

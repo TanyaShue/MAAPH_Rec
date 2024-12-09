@@ -3,6 +3,7 @@
     {
       "program_name": "阴阳师",
       "program_icon": "/icons/apps_icons/R.png",
+      "resource_path": "resource/yys_base",
       "program_tasks": [
         {
           "task_name": "打开游戏",
@@ -213,6 +214,31 @@
               }
             }
           }
+        }
+      }
+    },
+    {
+      "program_name": "战双帕弥什",
+      "program_icon": "/icons/apps_icons/OIP-C.jpg",
+      "resource_path": "resource/GRAY_RAVEN",
+      "program_tasks": [
+        {
+          "task_name": "打开游戏",
+          "task_entry": "打开游戏",
+          "option": [
+            "打开游戏"
+          ]
+        }
+      ],
+      "option": {
+        "打开游戏": {
+          "select": [
+            {
+              "name": "官服",
+              "pipeline_override": {
+              }
+            }
+          ]
         }
       }
     }

@@ -224,14 +224,14 @@
       "program_tasks": [
         {
           "task_name": "打开游戏",
-          "task_entry": "打开游戏",
+          "task_entry": "打开战双",
           "option": [
-            "打开游戏"
+            "打开战双"
           ]
         }
       ],
       "option": {
-        "打开游戏": {
+        "打开战双": {
           "select": [
             {
               "name": "官服",

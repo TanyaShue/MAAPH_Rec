@@ -1,0 +1,68 @@
+{
+  "一键日常": {
+    "action": "Custom",
+    "custom_action": "TaskList",
+    "custom_action_param": {
+      "task_list": [
+      "领取每日任务奖励",
+      "执行宿舍任务",
+      "领取每日任务奖励"
+      ]
+    },
+    "on_error": "返回主页"
+  },
+  "领取每日任务奖励": {
+    "next": "点击任务"
+  },
+  "点击任务": {
+    "recognition": "OCR",
+    "action": "Click",
+    "next": "点击每日任务",
+    "post_delay": 1000,
+    "roi": [
+      833,
+      291,
+      199,
+      58
+    ],
+    "expected": "任务"
+  },
+  "点击每日任务": {
+    "recognition": "OCR",
+    "next": "点击一键领取",
+    "action": "Click",
+    "roi": [
+      12,
+      277,
+      228,
+      71
+    ],
+    "expected": "每日"
+  },
+  "点击一键领取": {
+    "recognition": "OCR",
+    "action": "Click",
+    "roi": [
+      1068,
+      99,
+      176,
+      105
+    ],
+    "expected": "一键领取",
+    "next": "日常_点击屏幕继续"
+  },
+  "日常_点击屏幕继续": {
+    "action": "Click",
+    "post_delay": 1000,
+    "target": [
+      30,
+      246,
+      113,
+      312
+    ],
+    "next": "返回主页"
+  },
+  "执行宿舍任务": {
+
+  }
+}

@@ -93,29 +93,25 @@
       591,
       111,
       119
-    ],
-    "next": "阴阳寮奖励领取_识别结界特征",
-    "interrupt": [
-      "阴阳寮奖励领取_结界奖励领取_领取体力",
-      "阴阳寮奖励领取_结界奖励领取_领取经验"
     ]
   },
   "阴阳寮奖励领取_识别结界特征": {
     "recognition": "FeatureMatch",
     "template": "阴阳寮/阴阳寮_结界_结界换装.png",
     "post_delay": 500,
-    "next": "阴阳寮奖励领取_结界奖励领取",
+    "next": "阴阳寮奖励领取_结界奖励领取_识别结界奖励",
     "interrupt": [
       "阴阳寮奖励领取_结界奖励领取_领取体力",
       "阴阳寮奖励领取_结界奖励领取_领取经验"
     ]
   },
-  "阴阳寮奖励领取_结界奖励领取": {
+  "阴阳寮奖励领取_结界奖励领取_识别结界奖励": {
     "recognition": "FeatureMatch",
     "template": [
       "阴阳寮/阴阳寮_结界_体力.png",
       "阴阳寮/阴阳寮_结界_体力_半满.png",
-      "阴阳寮/阴阳寮_结界_经验.png"
+      "阴阳寮/阴阳寮_结界_经验.png",
+      "阴阳寮/阴阳寮_结界_经验_2.png"
     ],
     "inverse": true,
     "post_delay": 1000,
@@ -133,7 +129,15 @@
     "post_delay": 1000,
     "next": "阴阳寮奖励领取_结界奖励领取_识别寄养栏位",
     "timeout": 1000,
-    "on_error": "返回庭院"
+    "on_error": "日志_输出以寄养"
+  },
+  "日志_输出以寄养": {
+    "action": "Custom",
+    "custom_action": "TaskLog",
+    "custom_action_param": {
+      "message": "已经存在寄养"
+    },
+    "next": "返回庭院"
   },
   "阴阳寮奖励领取_结界奖励领取_识别寄养栏位": {
     "recognition": "FeatureMatch",
@@ -226,7 +230,7 @@
   "阴阳寮奖励领取_结界奖励领取_领取经验": {
     "recognition": "FeatureMatch",
     "action": "Click",
-    "template": "阴阳寮/阴阳寮_结界_经验.png",
+    "template": ["阴阳寮/阴阳寮_结界_经验.png","阴阳寮/阴阳寮_结界_经验_2.png"],
     "post_delay": 1000,
     "next": "阴阳寮奖励领取_结界奖励领取_领取经验_提取",
     "timeout": 1000

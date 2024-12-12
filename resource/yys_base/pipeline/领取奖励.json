@@ -95,10 +95,11 @@
     ]
   },
   "领取奖励_识别日常奖励": {
-    "recognition": "FeatureMatch",
+    "recognition": "TemplateMatch",
     "template": [
       "签到.png",
       "签到_2.png",
+      "签到_3.png",
       "勾玉.png",
       "勾玉_2.png",
       "签到小垃圾.png",
@@ -120,7 +121,8 @@
     "action": "Click",
     "template": [
       "签到.png",
-      "签到_2.png"
+      "签到_2.png",
+      "签到_3.png"
     ],
     "post_delay": 1000,
     "roi": [
@@ -133,7 +135,7 @@
   },
   "领取奖励_签到_点击签到": {
     "action": "Click",
-    "post_delay": 1000,
+    "post_delay": 3000,
     "target": [
       562,
       153,
@@ -144,12 +146,13 @@
       "领取奖励_签到_点击屏幕继续",
       "关闭签到界面"
     ]
+
   },
   "领取奖励_签到_点击屏幕继续": {
     "recognition": "OCR",
     "expected": "点击屏幕继续",
     "action": "Click",
-    "post_delay": 1000,
+    "post_delay": 2000,
     "roi": [
       504,
       666,
@@ -162,7 +165,10 @@
       313,
       53
     ],
-    "next": "关闭签到界面"
+    "interrupt": [
+      "关闭签到界面"
+    ],
+    "next": "识别庭院特征"
   },
   "关闭签到界面": {
     "recognition": "FeatureMatch",
@@ -175,7 +181,8 @@
     "roi": [
 760,24,375,197
     ],
-    "next": "返回庭院"
+    "next": "返回庭院",
+    "timeout": 1000
   },
   "领取奖励_每日勾玉": {
     "recognition": "FeatureMatch",

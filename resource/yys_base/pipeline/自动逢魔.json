@@ -215,9 +215,8 @@
       509,
       160
     ],
-    "next": [
-      "现世逢魔_装备式神预设"
-    ]
+    "next": "现世逢魔_装备式神预设",
+    "on_error": "现世逢魔_御魂_返回"
   },
   "现世逢魔_装备式神预设": {
     "recognition": "FeatureMatch",
@@ -246,10 +245,7 @@
     "recognition": "FeatureMatch",
     "action": "Click",
     "roi": [
-      1091,
-      501,
-      167,
-      173
+      1031,528,231,161
     ],
     "template": "现世封魔_准备.png",
     "timeout": 350000,

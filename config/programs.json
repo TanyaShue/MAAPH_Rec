@@ -49,12 +49,16 @@
           "task_name": "日常",
           "task_entry": "日常_任务列表",
           "option": [
-            "是否启用送友情点"
+            "日常_送友情点",
+            "领取奖励_邮件",
+            "领取奖励_日常庭院奖励",
+            "领取奖励_商店每日奖励",
+            "领取奖励_花合战奖励"
           ]
         },
         {
-          "task_name": "领取奖励",
-          "task_entry": "领取奖励_任务列表",
+          "task_name": "周日常",
+          "task_entry": "",
           "option": []
         },
         {
@@ -205,11 +209,51 @@
             }
           }
         },
-        "是否启用送友情点": {
+        "日常_送友情点": {
           "boole": {
-            "default": false,
+            "default": true,
             "pipeline_override": {
               "日常_送友情点": {
+                "enabled": "{boole}"
+              }
+            }
+          }
+        },
+        "领取奖励_邮件": {
+          "boole": {
+            "default": true,
+            "pipeline_override": {
+              "领取奖励_邮件": {
+                "enabled": "{boole}"
+              }
+            }
+          }
+        },
+        "领取奖励_日常庭院奖励": {
+          "boole": {
+            "default": true,
+            "pipeline_override": {
+              "领取奖励_日常奖励": {
+                "enabled": "{boole}"
+              }
+            }
+          }
+        },
+        "领取奖励_商店每日奖励": {
+          "boole": {
+            "default": true,
+            "pipeline_override": {
+              "领取奖励_商店每日奖励": {
+                "enabled": "{boole}"
+              }
+            }
+          }
+        },
+        "领取奖励_花合战奖励": {
+          "boole": {
+            "default": true,
+            "pipeline_override": {
+              "领取奖励_花合战奖励": {
                 "enabled": "{boole}"
               }
             }

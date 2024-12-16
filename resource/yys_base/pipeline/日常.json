@@ -4,7 +4,11 @@
     "custom_action": "TaskList",
     "custom_action_param": {
       "task_list": [
-        "日常_送友情点"
+        "日常_送友情点",
+        "领取奖励_邮件",
+        "领取奖励_日常奖励",
+        "领取奖励_商店每日奖励",
+        "领取奖励_花合战奖励"
       ]
     },
     "on_error": "返回庭院"

@@ -10,8 +10,8 @@ import shutil
 import json
 
 # 路径配置
-image_dir = "image"
-pipeline_dir = "pipeline"
+image_dir = "yys_base/image"
+pipeline_dir = "yys_base/pipeline"
 backup_image_dir = "backup_image"
 backup_pipeline_dir = "backup_pipeline"
 

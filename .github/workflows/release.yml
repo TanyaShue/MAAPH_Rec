@@ -3,7 +3,11 @@ name: Create Release Zip
 on:
   push:
     tags:
-      - '*'  # 当推送任意标签时触发
+      - '*'
+
+permissions:
+  contents: write
+  releases: write
 
 jobs:
   release:
@@ -15,7 +19,7 @@ jobs:
 
       - name: Create ZIP archive of the repository
         run: |
-          zip -r release.zip . -x "*.git*"   # 排除 .git 文件夹，避免将 Git 信息打包进压缩包
+          zip -r release.zip . -x "*.git*"
 
       - name: Create GitHub Release
         id: create_release

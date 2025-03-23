@@ -1,8 +1,9 @@
 {
     "resource_name": "阴阳师",
-    "resource_version": "1.0.3",
+    "resource_version": "1.0.4",
     "resource_author": "Maa",
     "resource_description": "阴阳师自动化脚本",
+    "resource_update_service": "https://api.github.com/repos/TanyaShue/MAAPH_Rec/releases/latest",
     "resource_icon": "/icons/apps_icons/R.png",
     "resource_tasks": [
         {

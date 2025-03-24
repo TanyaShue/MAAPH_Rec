@@ -6,15 +6,6 @@
     "custom_action_param": {
     }
   },
-  "testSwitchSoul": {
-    "recognition": "DirectHit",
-    "action": "Custom",
-    "custom_action": "SwitchSoul",
-    "custom_action_param": {
-      "group_name": "日常",
-      "team_name": "日常清杂"
-    }
-  },
 "testTaskList":{
   "recognition": "DirectHit",
   "action": "Custom",

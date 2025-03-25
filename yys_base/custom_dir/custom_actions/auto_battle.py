@@ -69,7 +69,9 @@ class AutoBattle(CustomAction):
             else:
                 print("队伍不存在")
                 return False
-            
+        
+        # 出战队伍
+            context.run_task("出战队伍",{"出战队伍": {"action": "Click","recognition": "OCR","expected": "出战","roi": [352,637,146,53],"post_delay": 1000,"timeout": 1000}})
         
         # 点击准备 开始战斗，这里点击两次，防止队伍上场失败导致准备无效
         for i in range(2):

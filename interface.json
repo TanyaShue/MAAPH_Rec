@@ -13,13 +13,6 @@
           ]
       }
   ],
-  "agent": {
-    "child_exec": "python",
-    "identifier":"111-222-333-444",
-    "child_args": [
-        "{PROJECT_DIR}/MaaAgent.py"
-    ]
-},
   "task": [
       {
           "name": "打开游戏",

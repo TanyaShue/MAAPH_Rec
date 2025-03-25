@@ -1,8 +1,9 @@
 {
     "resource_name": "阴阳师",
-    "resource_version": "1.0.1",
+    "resource_version": "1.0.5",
     "resource_author": "Maa",
     "resource_description": "阴阳师自动化脚本",
+    "resource_update_service": "https://api.github.com/repos/TanyaShue/MAAPH_Rec/releases/latest",
     "resource_icon": "/icons/apps_icons/R.png",
     "resource_tasks": [
         {
@@ -158,6 +159,11 @@
                     "custom_action_param": {
                         "group_name": "{value}"
                     }
+                },
+                "开始自动挑战鬼王": {
+                    "custom_action_param": {
+                        "group_name": "{value}"
+                    }
                 }
             }
         },
@@ -167,6 +173,11 @@
             "default": "默认队伍",
             "pipeline_override": {
                 "装备地狱鬼王预设": {
+                    "custom_action_param": {
+                        "team_name": "{value}"
+                    }
+                },
+                "开始自动挑战鬼王": {
                     "custom_action_param": {
                         "team_name": "{value}"
                     }

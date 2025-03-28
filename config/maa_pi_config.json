@@ -1,0 +1,11 @@
+{
+    "resource": "阴阳师",
+    "controller": {
+        "name": "安卓端"
+    },
+    "adb": {
+        "adb_path": "C:/Android/adb.exe",
+        "address": "emulator-5554",
+        "config": {}
+    }
+}

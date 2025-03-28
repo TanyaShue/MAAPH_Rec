@@ -69,7 +69,7 @@ def main():
     # socket_id = sys.argv[-1]
     socket_id = "111-222-333-444"
 
-    load_custom_objects(AgentServer, "./yys_base/custom_dir")
+    load_custom_objects(AgentServer, "./MaaYYs/custom_dir")
     print("当前socket_id:", socket_id)
     AgentServer.start_up(socket_id)
     AgentServer.join()

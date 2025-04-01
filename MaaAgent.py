@@ -1,3 +1,4 @@
+import argparse
 import os
 import sys
 from maa.agent.agent_server import AgentServer
@@ -63,7 +64,27 @@ def load_custom_objects(agent, custom_dir):
         sys.path = original_path
 
 
+import sys
+from maa.toolkit import Toolkit
+
+
 def main():
+    # # Create argument parser
+    # parser = argparse.ArgumentParser(description='Start Agent Server with custom parameters')
+    #
+    # # Add arguments
+    # parser.add_argument('-path', '--custom_path', required=True, help='Path to custom objects directory')
+    # parser.add_argument('-id', '--socket_id', required=True, help='Socket ID for server connection')
+    #
+    # # Parse arguments
+    # args = parser.parse_args()
+    #
+    # # Initialize toolkit
+    # Toolkit.init_option("./")
+    #
+    # # Use the arguments
+    # custom_objects_path = args.custom_path
+    # socket_id = args.socket_id
     Toolkit.init_option("./")
 
     # socket_id = sys.argv[-1]

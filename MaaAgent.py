@@ -1,8 +1,5 @@
-import argparse
 import os
-import sys
 from maa.agent.agent_server import AgentServer
-from maa.toolkit import Toolkit
 from maa.custom_action import CustomAction
 from maa.custom_recognition import CustomRecognition
 

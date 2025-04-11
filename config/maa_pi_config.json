@@ -4,8 +4,17 @@
         "name": "安卓端"
     },
     "adb": {
-        "adb_path": "C:/Android/adb.exe",
+        "adb_path": "D:/leidian/LDPlayer9/adb.exe",
         "address": "emulator-5554",
-        "config": {}
+        "config": {
+            "extras": {
+                "ld": {
+                    "enable": true,
+                    "index": 0,
+                    "path": "D:/leidian/LDPlayer9",
+                    "pid": 12320
+                }
+            }
+        }
     }
 }

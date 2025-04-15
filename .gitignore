@@ -460,3 +460,17 @@ tools/ImageCropper/**/*.png
 /assets/debug/
 /.nicegui/
 /MaaYYs/.idea/
+/logs/
+/assets/config/
+/assets/debug/
+/debug/
+/config/
+/.nicegui/
+/assets/history/
+/assets/temp/
+/MAA_YYS.exe.spec
+/dist/
+/build/
+*/.idea/
+__pycache__/
+MFWPH_*.spec

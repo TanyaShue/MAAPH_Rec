@@ -1,3 +1,6 @@
 [submodule "MAA_Punish_Res"]
 	path = MAA_Punish_Res
 	url = https://github.com/TanyaShue/MAA_Punish_Res
+[submodule "MaaYYs"]
+	path = MaaYYs
+	url = https://github.com/TanyaShue/MaaYYs

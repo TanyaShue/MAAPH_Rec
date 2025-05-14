@@ -76,9 +76,6 @@ def main():
     # # Parse arguments
     # args = parser.parse_args()
     #
-    # # Initialize toolkit
-    # Toolkit.init_option("./")
-    #
     # # Use the arguments
     # custom_objects_path = args.custom_path
     # socket_id = args.socket_id

@@ -2,7 +2,7 @@
 """
 该脚本主要用于添加资源文件中的图片路径校验,只需要文件名相同,则会认为为同一图片,
 然后校验路径是否正确，不正确则修改路径，最后将修改后的文件保存到新的文件中
-
+新增功能：将没有被任何地方引用的图片移到备份文件夹中的"暂无作用"目录中
 """
 
 import os
@@ -10,8 +10,8 @@ import shutil
 import json
 
 # 路径配置
-image_dir = "yys_base/image"
-pipeline_dir = "yys_base/pipeline"
+image_dir = "MaaYYs/image"
+pipeline_dir = "MaaYYs/pipeline"
 backup_image_dir = "backup_image"
 backup_pipeline_dir = "backup_pipeline"
 
@@ -94,6 +94,79 @@ def validate_and_correct_path(template_path, image_map, json_path, field_path):
     return template_path  # 无需修正时返回原路径
 
 
+# 新增功能：跟踪在JSON文件中被引用的图片
+def track_referenced_images(pipeline_dir):
+    referenced_images = set()  # 使用集合存储所有被引用的图片名称
+
+    for root, _, files in os.walk(pipeline_dir):
+        for file in files:
+            if file.endswith(".json"):
+                json_path = os.path.join(root, file)
+                with open(json_path, "r", encoding="utf-8") as f:
+                    try:
+                        data = json.load(f)
+                        # 递归查找所有template字段
+                        find_referenced_images(data, referenced_images)
+                    except json.JSONDecodeError:
+                        print(f"警告: 无法解析JSON文件 {json_path}")
+
+    return referenced_images
+
+
+# 递归查找JSON中所有的template字段，提取被引用的图片
+def find_referenced_images(data, referenced_images):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if key == "template":
+                if isinstance(value, str):  # 单个模板路径
+                    referenced_images.add(os.path.basename(value))
+                elif isinstance(value, list):  # 多个模板路径
+                    for path in value:
+                        if isinstance(path, str):
+                            referenced_images.add(os.path.basename(path))
+            elif isinstance(value, (dict, list)):
+                find_referenced_images(value, referenced_images)
+    elif isinstance(data, list):
+        for item in data:
+            find_referenced_images(item, referenced_images)
+
+
+# 新增功能：移动未被引用的图片到备份文件夹中的"暂无作用"目录
+def move_unused_images(image_dir, backup_image_dir, referenced_images):
+    # 创建暂无作用目录（如果不存在）
+    unused_dir = os.path.join(backup_image_dir, "暂无作用")
+    if not os.path.exists(unused_dir):
+        os.makedirs(unused_dir)
+        print(f"已创建目录: {unused_dir}")
+
+    # 获取所有图片文件及其路径
+    all_images = []  # 存储(图片名, 完整路径)的元组
+    for root, _, files in os.walk(image_dir):
+        for file in files:
+            if file.endswith((".png", ".jpg", ".jpeg")):
+                all_images.append((file, os.path.join(root, file)))
+
+    # 找出未被引用的图片并移动
+    moved_count = 0
+    for filename, filepath in all_images:
+        if filename not in referenced_images:
+            dst_path = os.path.join(unused_dir, filename)
+
+            # 确保目标路径唯一（添加数字后缀如果需要）
+            counter = 1
+            base_name, ext = os.path.splitext(dst_path)
+            while os.path.exists(dst_path):
+                dst_path = f"{base_name}_{counter}{ext}"
+                counter += 1
+
+            # 移动图片到暂无作用目录
+            shutil.move(filepath, dst_path)
+            print(f"未引用图片已移动: {filename} -> {dst_path}")
+            moved_count += 1
+
+    print(f"共发现并移动 {moved_count} 个未被引用的图片")
+
+
 # 主程序
 if __name__ == "__main__":
     # 第一步：备份
@@ -106,5 +179,10 @@ if __name__ == "__main__":
     # 第三步：更新并校验 JSON 文件
     update_json_files(pipeline_dir, image_mapping)
 
-    print("一切顺利 !!！")
+    # 新增步骤：跟踪被引用的图片
+    referenced_images = track_referenced_images(pipeline_dir)
 
+    # 新增步骤：移动未被引用的图片
+    move_unused_images(image_dir, backup_image_dir, referenced_images)
+
+    print("一切顺利 !!！")
